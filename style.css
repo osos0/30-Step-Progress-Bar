@@ -1,0 +1,89 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  background-color: yellow;
+}
+
+.container {
+  text-align: center;
+}
+
+.progress-con {
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.bar-back {
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  background-color: lightslategrey;
+  border: none;
+  z-index: -1;
+  margin: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.bar-front {
+  position: absolute;
+  height: 4px;
+  width: 0%;
+  background-color: green;
+  border: none;
+  z-index: -1;
+  margin: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.step {
+  background-color: aliceblue;
+  height: 30px;
+  width: 30px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 4px rgb(202, 204, 207) solid;
+  color: lightslategray;
+}
+
+.checked {
+  color: green;
+  border-color: green;
+}
+
+.checked small {
+  position: absolute;
+  bottom: -20px;
+  font-family: cursive;
+}
+
+.btn {
+  background-color: green;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 20px;
+  border-radius: 10px;
+  margin: 50px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.btn:active {
+  transform: scale(0.97);
+}
+.btn:disabled {
+  background-color: gray;
+}
